@@ -5,16 +5,15 @@ using System.Collections.Generic;
 public class paradigm
 {
 public  static void Main()
+{
+  var input =Console.ReadLine();
+  var charArray = input.ToCharArray();
+  Array.Reverse(charArray);
+  var reversed = new string(charArray);
+  Console.WriteLine(reversed);
+  if( reversed == input)
   {
-    List<string> numbersInput = new List<string>();
-
-              Console.WriteLine("enter a word bro");
-            string input = Console.ReadLine();
-            numbersInput.Add(input);
-            string[] terms = numbersInput.ToArray();
-    Array.Reverse(terms);
-
-  Console.WriteLine(numbersInput) ;
+    Console.WriteLine("your word is a paradigm");
   }
-
+}
 }
